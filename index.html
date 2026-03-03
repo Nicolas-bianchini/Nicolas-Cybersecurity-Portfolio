@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nicolas Bianchini — Portfolio | Systèmes, Réseaux & Cybersécurité</title>
+  <meta name="description" content="Portfolio de Nicolas Bianchini — Technicien Infrastructure & Réseau : projets, compétences, outils, expérience et objectifs en cybersécurité." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- Skip link accessibilité -->
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Header / Nav -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Retour en haut">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__name">N. Bianchini</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="sr-only">Ouvrir le menu</span>
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <a class="nav__link" href="#about">À propos</a>
+        <a class="nav__link" href="#experience">Expérience</a>
+        <a class="nav__link" href="#skills">Compétences</a>
+        <a class="nav__link" href="#projects">Projets</a>
+        <a class="nav__link" href="#goals">Objectifs</a>
+        <a class="nav__link" href="#contact">Contact</a>
+
+        <button class="mode" id="modeToggle" type="button" aria-label="Basculer le thème">
+          <span class="mode__icon" aria-hidden="true">☾</span>
+          <span class="mode__text">Thème</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Systèmes • Réseaux • Cybersécurité</p>
+
+          <h1 class="hero__title">
+            Nicolas <span class="accent">Bianchini</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Technicien Infrastructure & Réseau (BTS SIO SISR) — je conçois, déploie et sécurise des environnements
+            orientés <strong>segmentation</strong>, <strong>accès sécurisés</strong> et <strong>résilience</strong>.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">Voir mes projets</a>
+            <!-- Mets ton PDF ici : ./assets/cv/CV_Nicolas_Bianchini.pdf -->
+            <a class="btn btn--ghost" href="./assets/cv/CV_Nicolas_Bianchini.pdf" target="_blank" rel="noopener">
+              Télécharger mon CV
+            </a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <p class="stat__value">SISR</p>
+              <p class="stat__label">Spécialisation</p>
+            </div>
+            <div class="stat">
+              <p class="stat__value">Proxmox</p>
+              <p class="stat__label">Virtualisation</p>
+            </div>
+            <div class="stat">
+              <p class="stat__value">pfSense/OPNsense</p>
+              <p class="stat__label">Réseau & Sécurité</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <!-- Option A: image locale (mets un fichier dans assets/img/hero-illustration.svg) -->
+          <img class="hero__img" src="./assets/img/hero-illustration.svg" alt="" loading="lazy"
+               onerror="this.style.display='none'">
+          <!-- Option B: fallback -->
+          <div class="hero__card">
+            <div class="hero__cardTop">
+              <span class="pill">Infrastructure</span>
+              <span class="pill">Sécurité</span>
+              <span class="pill">Documentation</span>
+            </div>
+            <div class="hero__cardBody">
+              <p class="muted">
+                Portfolio orienté preuves : projets, schémas, configs, bonnes pratiques, livrables.
+              </p>
+              <div class="mini-grid">
+                <div class="mini">LAN / DMZ</div>
+                <div class="mini">VPN</div>
+                <div class="mini">HA</div>
+                <div class="mini">Supervision</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__fade" aria-hidden="true"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>À propos</h2>
+          <p class="section__desc">
+            Présentation courte, claire, et orientée recruteur : qui je suis, ce que je fais, et vers quoi j’évolue.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card card--soft">
+            <h3>Profil</h3>
+            <p>
+              En <strong>BTS SIO option SISR</strong> en alternance, j’interviens sur l’administration systèmes,
+              l’infrastructure réseau et le support technique. Je m’oriente progressivement vers
+              la <strong>cybersécurité</strong> (accès, segmentation, supervision, durcissement).
+            </p>
+            <ul class="list">
+              <li>Administration Windows Server & Active Directory</li>
+              <li>Déploiement automatisé (MDT/WDS)</li>
+              <li>Virtualisation (Proxmox / Hyper-V)</li>
+              <li>Réseaux & sécurité (VPN, pare-feu, DMZ, analyse)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Ce que je cherche</h3>
+            <p>
+              Une alternance / opportunité orientée <strong>infrastructure</strong> et <strong>sécurité</strong>,
+              avec des projets concrets et de la montée en compétences.
+            </p>
+
+            <div class="callout">
+              <p class="callout__title">Mon approche</p>
+              <p class="callout__text">
+                Architecture propre + sécurité + documentation : je produis des livrables utilisables (schémas, procédures, checklists).
+              </p>
+            </div>
+
+            <div class="chips">
+              <span class="chip">Segmentation</span>
+              <span class="chip">VPN</span>
+              <span class="chip">HA / Résilience</span>
+              <span class="chip">Supervision</span>
+              <span class="chip">Sauvegarde</span>
+              <span class="chip">Analyse de trames</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <h2>Expérience</h2>
+          <p class="section__desc">
+            Expérience pro synthétique, orientée missions et impact (pas de pavés).
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content card">
+              <div class="timeline__top">
+                <h3>Technicien Infrastructure & Réseau — ABS AMS</h3>
+                <span class="muted">Alternance • 2021 → aujourd’hui</span>
+              </div>
+              <ul class="list">
+                <li>Support N1/N2 (diagnostic, résolution, documentation)</li>
+                <li>Administration Active Directory (utilisateurs, groupes, GPO, droits NTFS)</li>
+                <li>Déploiement automatisé via MDT/WDS, intégration d’applications standards</li>
+                <li>Installation/Préparation serveurs (RAID, OS, mises à jour, intégration domaine)</li>
+                <li>Interventions clients : réseau (switch, IP, Wi-Fi), serveurs, postes</li>
+              </ul>
+              <div class="chips">
+                <span class="chip">Windows Server</span>
+                <span class="chip">AD DS</span>
+                <span class="chip">GPO</span>
+                <span class="chip">MDT/WDS</span>
+                <span class="chip">RDS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__content card">
+              <div class="timeline__top">
+                <h3>Projets de lab — Infrastructure & Sécurité</h3>
+                <span class="muted">Projets perso / BTS</span>
+              </div>
+              <ul class="list">
+                <li>Architecture segmentée (LAN / DMZ / ADMIN) sur virtualisation</li>
+                <li>Pare-feu (pfSense/OPNsense), règles inter-réseaux, NAT, VPN</li>
+                <li>Services : AD DS, DNS, DHCP, RDS, Nextcloud, supervision, sauvegarde</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2>Compétences</h2>
+          <p class="section__desc">
+            Séparées en deux : <strong>Compétences / connaissances</strong> (ce que tu sais faire) et <strong>Outils utilisés</strong> (avec quoi tu le fais).
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <!-- Compétences / connaissances -->
+          <div class="card">
+            <h3>Compétences & connaissances</h3>
+
+            <div class="skill-block">
+              <h4>Systèmes</h4>
+              <ul class="list list--compact">
+                <li>Administration Windows Server (rôles, services)</li>
+                <li>Active Directory : utilisateurs/groupes/OU, GPO, droits NTFS</li>
+                <li>RDS / accès distant (principes, bonnes pratiques)</li>
+                <li>Linux : bases Debian (services, permissions, logs)</li>
+              </ul>
+            </div>
+
+            <div class="skill-block">
+              <h4>Réseaux & sécurité</h4>
+              <ul class="list list--compact">
+                <li>TCP/IP, adressage, routage, NAT</li>
+                <li>Segmentation (LAN/DMZ/ADMIN), filtrage inter-réseaux</li>
+                <li>VPN : principes, flux, accès sécurisé</li>
+                <li>Analyse de trames & dépannage (méthodo par couches)</li>
+              </ul>
+            </div>
+
+            <div class="skill-block">
+              <h4>Exploitation</h4>
+              <ul class="list list--compact">
+                <li>Déploiement automatisé de postes</li>
+                <li>Supervision, sauvegarde/restauration</li>
+                <li>Documentation : procédures, schémas, checklists</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Outils -->
+          <div class="card card--soft">
+            <h3>Outils utilisés</h3>
+
+            <div class="tools">
+              <div class="tool-group">
+                <h4>Systèmes</h4>
+                <div class="chips">
+                  <span class="chip">Windows Server</span>
+                  <span class="chip">Active Directory</span>
+                  <span class="chip">GPMC</span>
+                  <span class="chip">RDS</span>
+                </div>
+              </div>
+
+              <div class="tool-group">
+                <h4>Réseau & sécurité</h4>
+                <div class="chips">
+                  <span class="chip">pfSense</span>
+                  <span class="chip">OPNsense</span>
+                  <span class="chip">OpenVPN</span>
+                  <span class="chip">Wireshark</span>
+                </div>
+              </div>
+
+              <div class="tool-group">
+                <h4>Virtualisation</h4>
+                <div class="chips">
+                  <span class="chip">Proxmox</span>
+                  <span class="chip">Hyper-V</span>
+                  <span class="chip">Docker</span>
+                </div>
+              </div>
+
+              <div class="tool-group">
+                <h4>Déploiement / supervision / sauvegarde</h4>
+                <div class="chips">
+                  <span class="chip">MDT</span>
+                  <span class="chip">WDS</span>
+                  <span class="chip">Veeam</span>
+                  <span class="chip">BackupAssist</span>
+                  <span class="chip">Centreon</span>
+                  <span class="chip">GLPI</span>
+                </div>
+              </div>
+
+              <div class="tool-group">
+                <h4>Automatisation</h4>
+                <div class="chips">
+                  <span class="chip">PowerShell</span>
+                  <span class="chip">Python (en progression)</span>
+                </div>
+              </div>
+            </div>
+
+            <p class="muted small">
+              Astuce : adapte cette liste à tes projets réels et à ce que tu veux mettre en avant.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2>Projets</h2>
+          <p class="section__desc">
+            Les projets sont la partie la plus importante : un recruteur doit pouvoir comprendre en 10 secondes puis cliquer.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="project card">
+            <div class="project__top">
+              <h3>Infrastructure sécurisée haute disponibilité</h3>
+              <p class="muted">Pare-feu HA • Segmentation • VPN • DMZ</p>
+            </div>
+            <p>
+              Mise en place d’une infra segmentée avec pare-feu, règles inter-réseaux, accès VPN, services isolés en DMZ.
+            </p>
+            <ul class="list list--compact">
+              <li>HA (CARP) / redondance</li>
+              <li>DMZ + règles inter-réseaux</li>
+              <li>Supervision & sauvegarde</li>
+            </ul>
+            <div class="project__footer">
+              <!-- Mets ici ton repo -->
+              <a class="btn btn--small btn--primary" href="#" target="_blank" rel="noopener">Voir le repo</a>
+              <a class="btn btn--small btn--ghost" href="#" target="_blank" rel="noopener">Voir la doc</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project__top">
+              <h3>Déploiement automatisé MDT portable</h3>
+              <p class="muted">MDT/WDS • Standardisation • PowerShell</p>
+            </div>
+            <p>
+              Déploiement de postes avec intégration d’applications standards, drivers, automatisations et procédures.
+            </p>
+            <ul class="list list--compact">
+              <li>Task sequences + applis</li>
+              <li>Gestion drivers / images</li>
+              <li>Procédure reproductible</li>
+            </ul>
+            <div class="project__footer">
+              <a class="btn btn--small btn--primary" href="#" target="_blank" rel="noopener">Voir le repo</a>
+              <a class="btn btn--small btn--ghost" href="#" target="_blank" rel="noopener">Voir la doc</a>
+            </div>
+          </article>
+
+          <article class="project card">
+            <div class="project__top">
+              <h3>Accès sécurisé à un service collaboratif</h3>
+              <p class="muted">DMZ • VPN • Reverse proxy</p>
+            </div>
+            <p>
+              Publication d’un service collaboratif en DMZ avec accès sécurisé, contrôle des flux et bonnes pratiques.
+            </p>
+            <ul class="list list--compact">
+              <li>Isolation DMZ</li>
+              <li>Accès distant sécurisé</li>
+              <li>Logs / supervision</li>
+            </ul>
+            <div class="project__footer">
+              <a class="btn btn--small btn--primary" href="#" target="_blank" rel="noopener">Voir le repo</a>
+              <a class="btn btn--small btn--ghost" href="#" target="_blank" rel="noopener">Voir la doc</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="note card card--soft">
+          <h3>Comment je documente mes projets</h3>
+          <p class="muted">
+            Pour chaque projet : objectifs, schéma réseau, choix techniques, configuration clé, tests, limites, axes d’amélioration.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GOALS -->
+    <section class="section" id="goals">
+      <div class="container">
+        <div class="section__head">
+          <h2>Objectifs</h2>
+          <p class="section__desc">
+            Clair, assumé, orienté progression : c’est ce qui te rend cohérent et crédible.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>Objectif professionnel</h3>
+            <p>
+              Évoluer vers un poste orienté <strong>ingénierie infrastructure & cybersécurité</strong> :
+              concevoir des architectures résilientes, segmentées et sécurisées.
+            </p>
+            <div class="chips">
+              <span class="chip">Réseau & sécu</span>
+              <span class="chip">Architecture</span>
+              <span class="chip">Hardening</span>
+              <span class="chip">Supervision</span>
+            </div>
+          </div>
+
+          <div class="card card--soft">
+            <h3>Axes de progression</h3>
+            <ul class="list">
+              <li>Approfondir la sécurité réseau (filtrage, IDS/IPS, Zero Trust)</li>
+              <li>Monter en puissance en scripting (PowerShell → Python)</li>
+              <li>Approche SOC : logs, SIEM, détection & réponse</li>
+              <li>Certifs : CCNA (école) + Security+ (perso)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p class="section__desc">
+            Contact simple : mail + LinkedIn. Tu peux ajouter GitHub et ton site E5.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>Me contacter</h3>
+            <div class="contact">
+              <a class="contact__row" href="mailto:nbianchini.professionnel@gmail.com">
+                <span class="contact__label">Email</span>
+                <span class="contact__value">nbianchini.professionnel@gmail.com</span>
+              </a>
+
+              <!-- Mets ton lien LinkedIn -->
+              <a class="contact__row" href="#" target="_blank" rel="noopener">
+                <span class="contact__label">LinkedIn</span>
+                <span class="contact__value">Voir mon profil</span>
+              </a>
+
+              <!-- Mets ton lien GitHub -->
+              <a class="contact__row" href="#" target="_blank" rel="noopener">
+                <span class="contact__label">GitHub</span>
+                <span class="contact__value">Voir mes repos</span>
+              </a>
+
+              <!-- Option : lien vers ton site BTS E5 séparé -->
+              <a class="contact__row" href="#" target="_blank" rel="noopener">
+                <span class="contact__label">Portfolio BTS (E5)</span>
+                <span class="contact__value">Version épreuve</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="card card--soft">
+            <h3>Disponibilité</h3>
+            <p class="muted">
+              Tu peux ajouter ici une phrase “Ouvert aux opportunités sur Lyon / alternance / etc.”
+            </p>
+            <div class="availability">
+              <div class="availability__item">
+                <span class="dot dot--ok" aria-hidden="true"></span>
+                <span>Ouvert aux échanges</span>
+              </div>
+              <div class="availability__item">
+                <span class="dot dot--warn" aria-hidden="true"></span>
+                <span>Alternance / projets orientés infrastructure & sécurité</span>
+              </div>
+            </div>
+
+            <p class="muted small">
+              Conseil : évite d’afficher ton numéro en public sur GitHub Pages.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted small">© <span id="year"></span> Nicolas Bianchini — Portfolio</p>
+        <a class="muted small" href="#top">Retour en haut ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
