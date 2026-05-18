@@ -41,7 +41,7 @@ section {
 .navbar .nav-link {
   position: relative;
   color: #fff;
-  margin: 0 15px;
+  margin: 0 10px;
   padding-top: 1rem;   /* ↓ descend le texte */
   padding-bottom: 0.5rem; /* ajuste pour ne pas trop élargir la navbar */
 }
@@ -55,6 +55,11 @@ section {
   height: 2px;
   background: #fff;
   transition: width 0.3s ease;
+}
+
+.navbar .nav-link.active::after,
+.navbar .nav-link:hover::after {
+  width: 100%;
 }
 
 .navbar .nav-link.nav-cta {
